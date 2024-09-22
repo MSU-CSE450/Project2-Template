@@ -72,3 +72,6 @@ done
 # Report the final count of differing files
 echo "Passed $pass_count of $test_count regular tests (Failed $fail_count)"
 echo "Passed $error_pass_count of $error_test_count error tests (Failed $error_fail_count)"
+
+total_fail_count=$((fail_count + error_fail_count))
+exit $total_fail_count
